@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Terbaik Cyrene</title>
+    <link rel="stylesheet" href="buildCyrene.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger" id="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">ViTa</div>
+            <ul class="login">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="#stat">Stats</a></li>
+                <li><a href="#teamComp">Teamcomp</a></li>
+                <li><a href="#relics">Rekomendasi Relic</a></li>
+                <li><a href="#lightCone">Rekomendasi LightCone</a></li>
+                <li><a href="#trace">Trace</a></li>
+                <li><a href="#spbuff">Special Buff</a></li>
+                <li><a href="#gpGuide">Guide</a></li>
+                <li><a href="#foter">Contact Me</a></li>
+            </ul>
+        </aside>
+        <article>
+        <h3>Honkai: Star Rail</h3>
+        <h1>Build Terbaik Cyrene</h1>
+        <p>Terakhir diperbarui pada tanggal 21 Februari 2026</p>
+        <img src="../Cyrene.jpg" class="Cyrenei">
+        <p>Karakter 5-star ice dan karakter remembrance dan yang membuat banyak player HSR menjadi <i>karbit</i> dialah <b>Cyrene</b>. untuk guide seperti builds, team, relic, light Cone, dan cara memakai kitnya ada di sini!!</p>
+        <section class="reveal">
+            <h1>Ringkasan Karakter Cyrene</h1>
+            <h2>Informasi dasar Cyrene & Rating konten End Game</h2>
+            <table class="cyrenerow">
+                <tr>
+                    <th colspan="3">Info Dasar</th>
+                </tr>
+                <tr>
+                    <td class="Cyrene" rowspan="3"><img src="../IconChar/cyrene.png" class="icon"><br><a href="#">Cyrene</a></td>
+                    <td>Kelangkaan</td>
+                    <td><img src="../GambarIcon/5star.png" class="icons">5-star</td> 
+                </tr>
+                <tr>
+                    <td>Elemen</td>
+                    <td><img src="../GambarIcon/ice.png"  class="icons">   Ice</td>
+                </tr>
+                <tr>
+                    <td>Path</td>
+                    <td><img src="../GambarIcon/remembrance.png" class="icons">Remembrance</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Rating Umum</th>
+                    <th>Rating End Game</th>
+                </tr>
+                <tr>
+                    <td colspan="2"><pre><img src="../GambarIcon/s+.png" class="icons">   Overall</pre></td>
+                    <td><img src="../GambarIcon/overal ss.png" class="icons">   MOC</pre></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2"><pre><img src="../GambarIcon/s+.png" class="icons">   Support</pre></td>
+                    <td><img src="../GambarIcon/overal ss.png" class="icons">   PF</td>
+                </tr>
+                <tr>
+                    <td><img src="../GambarIcon/overal ss.png" class="icons">   AS</td>
+                </tr>
+            </table>
+            <p>Rating ini didasarkan pada Cyrene E0</p>
+        </section>
+        <section class="reveal" id="stat">
+            <h2>Cyrene Stats</h2>
+            <div class="gantiTab">
+                <button class="tab-link active" onclick="bukaTab(event, 'level1')">Level 1</button>
+                <button class="tab-link" onclick="bukaTab(event, 'level80')">Level 80</button>
+            </div>
+            <table id="level1" class="konten active">
+            <tr>
+                <th>Stat</th>
+                <th>Base Value</th>
+            </tr>
+            <tr>
+                <td>HP<br>(6th)</td>
+                <td>
+                    <div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 25%"></div> </div><b>190</b></div>
+                </td>
+            </tr>
+            <tr>
+                <td>ATK<br>(26th)</td>
+                <td><div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 15%"></div> </div><b>60</b></div></td>
+            </tr>
+            <tr>
+                <td>DEF<br>(8th)</td>
+                <td><div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 20%"></div> </div><b>79</b></div></td>
+            </tr>
+            <tr>
+                <td>SPD<br>(12th)</td>
+                <td><div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div> </div><b>101</b></div></td>
+            </tr>
+            </table>
+            <table id="level80" class="konten">
+            <tr>
+                <th>Stat</th>
+                <th>Base Value</th>
+            </tr>
+            <tr>
+                <td>HP<br>(6th)</td>
+                <td>
+                    <div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div> </div><b>1927</b></div> 
+                </td>
+            </tr>
+            <tr>
+                <td>ATK<br>(26th)</td>
+                <td><div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 60%"></div> </div><b>446</b></div></td>
+            </tr>
+            <tr>
+                <td>DEF<br>(8th)</td>
+                <td><div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 75%"></div> </div><b>582</b></div></td>
+            </tr>
+            <tr>
+                <td>SPD<br>(12th)</td>
+                <td><div class="stat"><div class="bar-bg"><div class="bar-fill" style="width: 85%"></div> </div><b>101</b></div></td>
+            </tr>
+            </table>
+            <h2>Apakah Cyrene bagus untuk diPull?</h2>
+            <p>Cyrene merupakan char Remembrance yang berfokus memberikan <em>special buff</em> untuk <em>Chrysos Heirs</em>. Selain itu jika bukan dari <em>Chrysos Heirs</em> dia juga dapat memberikan buff <em>true DMG </em> dan dapat mengisi ultimate penuh kepada tim pada ultimate pertamanya.</p>
+           <br><p>Dengan buff <em>Chrysos Heirs</em> yang menjadi fitur utamanya, Cyrene menjadi support terbaik dengan Char <em>Chrysos Heirs</em>. Tidak hanya itu Jika kalian bermain dengan Char remembrance Stack Ultimate Cyrene memungkinkan terisi penuh dengan cepat.</p>
+            <br><p>Singkatnya <b>Layak untuk diPull</b> jika kalian pengen Char <em>Chrysos Heirs</em> kalian bermain dengan optimal di konten END GAME yang akan datang. Atau kalau kalian suka atau ngewaifuin Cyrene ini gass aja pull.</p>
+            <br><h3>Perlukah kita Pull dengan Sign-nya?</h3>
+            <p>Sign-nya Cyrene ini <b>This Love, Forever</b> memberikan peningkatan SPD yang sangat tinggi sehingga dapat memudahkan kita buat ngejar stats standarnya, karena dasarnya SPD yang dibutuhkan Cyrene sangat tinggi karena dia harus selalu dapet giliran sebanyak mungkin untuk mengaktifkan <em>Recollection</em> (ultimatenya) sendiri. Tidak hanya itu LC signnya juga dapat memberikan peningkatan CDM terhadap tim.</p>
+            <br><p>Tapi balik lagi kalo kalian gak Punya stellar Jade yang cukup kalian bisa pakaiin LC remembrance yang dari toko Herta <b>Memory's Curtain Never Falls</b> itu juga bagus kok cuma yaa susah buat ngejar Stat-nya aja yang bikin Cyrenenya lama untuk mengumpulkan <em>Recollection</em> (stack ultinya).</p>
+        </section>
+        <section class="reveal">
+            <h1>Build Terbaik Cyrene</h1>
+            <h2>Cyrene Build Support</h2>
+            <div class="gantiTab">
+                <button class="build active" onclick="pindahTab(event, 'build')" >Build Dasar</button>
+                <button class="build" onclick="pindahTab(event, 'Alternatif')" >Alternatif LC</button>
+            </div>
+            <table id="build" class="conten active" >
+                <tr>
+                    <th>Light Cone</th>
+                    <th>Relic & Ornament</th>
+                </tr>
+                <tr>
+                    <td rowspan="3"><img src="../LightCone/LC CYRENE.png" class="icon" ><br>This Love, Forever</td>
+                        <td><img src="../Relic/sacerdos.png" class="relic"><br>Sacerdos' Relived Ordeal <b>X2</b></td>
+                </tr>
+                <tr>
+                    <td><img src="../Relic/mesengger.png" class="relic"><br>Messenger Traversing Hackerspace <b>X2</b></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td><img src="../Relic/Vonhwack.png" class="relic"><br>Sprightly Vonwacq</td>
+                </tr>
+                <tr>
+                    <th>Main stats</th>
+                    <th>Sub stats</th>
+                </tr>
+                <tr>
+                    <td><b>Badan</b>: HP% atau CRIT DMG</td>
+                    <td>SPD</td>
+                </tr>
+                <tr>
+                    <td><b>Kaki</b>: SPD</td>
+                    <td>HP%</td>
+                </tr>
+                <tr>
+                    <td><b>Sphere</b>: HP% atau Ice Damege Meningkat</td>
+                    <td>CDM</td>
+                </tr>
+                <tr>
+                    <td><b>Rope</b>: HP%</td>
+                    <td>CR</td>
+                </tr>
+            </table>
+            <table id="Alternatif" class="conten">
+                <tr>
+                    <th colspan="2">Alternatif Light Cone</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td><img src="../LightCone/memory curtain never falls.png" class="LC">Memory</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td><img src="../LightCone/Long My Rainbow.png" class="LC"> Long my Rainbow</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td><img src="../LightCone/Victory in A Blink.png" class="LC"> Victory in a blink</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td><img src="../LightCone/Sweat Now Cry Less.png" class="LC"> Sweat Now Cry Less</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td><img src="../LightCone/Remini scence.png" class="LC"> Reminiscence</td>
+                </tr>
+            </table>
+            <p>Kejar SPD Cyrene setinggi-tingginya biar Cyrenenya dapat giliran lebih banyak untuk mengaktifkan Recollection(Stack Ultimatenya) nya. Maka dari itu di sini direkomendasiin buat pasang <b>2pc 2pc SPD</b>.</p>
+            <br><p>untuk Ornament nya kalian bisa pakai <b>Vonwack</b> yang dapat mendahulukan aksi 30% ketika masuk pertempuran, tentu ini dapat membantu kita buat mengaktifkan Ultimatenya yang pertama. Karena jujur untuk mengaktifkan Ultimatenya agak lama jika Cyrene kalian tidak E2, bahkan bisa makan 1 Cycle hanya untuk mengaktifkan Ultimatenya.</p>
+            <br><h2>Rekomendasi Stats</h2>
+            <table>
+                <tr>
+                    <th>Stat</th>
+                    <th>Target Stat</th>
+                </tr>
+                <tr>
+                    <th>SPD</th>
+                    <td>180 - 200+</td>
+                </tr>
+                <tr>
+                    <th>CRIT Rate</th>
+                    <td>Dekat ke 50%</td>
+                </tr>
+                <tr>
+                    <th>HP</th>
+                    <td>4000+</td>
+                </tr>
+            </table>
+            <p>Kejar SPD 180 Semakin Tinggi SPD semakin cepat juga buat mengaktifkan Recollection(Stack Ultimatenya) yang terdiri dari 24 stack.</p>
+        </section>
+        <section class="reveal" id="teamComp">
+            <h1>Team Comp Cyrene</h1>
+            <h2>Team F2P</h2>
+            <table>
+                <tr>
+                    <th>DPS</th>
+                    <th>Support</th>
+                    <th>Support</th>
+                    <th>Sustain</th>
+                </tr>
+                <tr>
+                    <td>Semua DPS</td>
+                    <td><img src="../IconChar/cyrene.png" class="icon"><br>Cyrene </td>
+                    <td><img src="../IconChar/MC.png" class="icon"><br>Mc </td>
+                    <td><img src="../IconChar/danhengpt.png" class="icon"><br>TeraBox </td>
+                </tr>
+            </table>
+            <h2>Team Chrysos Heir</h2>
+            <table class="timChrysos reveal">
+                <tr>
+                    <td><img src="../IconChar/cyrene.png" class="icon"><br>Cyrene</td>
+                    <td><img src="../IconChar/Castorice.png" class="icon"><br>Castorice</td>
+                    <td><img src="../IconChar/Evernight.png" class="icon"><br>Evernight</td>
+                    <td><img src="../IconChar/Hyacine.png" class="icon"><br>Hyacine</td>
+                </tr>
+                <tr>
+                    <td><img src="../IconChar/cyrene.png" class="icon"><br>Cyrene</td>
+                    <td><img src="../IconChar/Aglaea.png" class="icon"><br>Aglaea</td>
+                    <td><img src="../IconChar/sunday.png" class="icon"><br>Sunday</td>
+                    <td><img src="../IconChar/danhengpt.png" class="icon"><br>Permansor Terrae</td>
+                </tr>
+                <tr>
+                    <td><img src="../IconChar/cyrene.png" class="icon"><br>Cyrene</td>
+                    <td><img src="../IconChar/Anaxa.png" class="icon"><br>Anaxa</td>
+                    <td><img src="../IconChar/cerydra.png" class="icon"><br>Cerydra</td>
+                    <td><img src="../IconChar/danhengpt.png" class="icon"><br>Permansor Terrae</td>
+                </tr>
+                <tr>
+                    <td><img src="../IconChar/cyrene.png" class="icon"><br>Cyrene</td>
+                    <td><img src="../IconChar/Mydei.png" class="icon"><br>Mydei</td>
+                    <td><img src="../IconChar/cerydra.png" class="icon"><br>Cerydra</td>
+                    <td><img src="../IconChar/Hyacine.png" class="icon"><br>Hyacine</td>
+                </tr>
+            </table>
+            <p>Tabel ini hanya sebagai contoh jika Cyrene dipasangkan dengan tim Chrisos Heirs.</p>
+            <br><p>Sekali lagi Cyerene didesain sama Hoyo memang buat <em>Support Chrysos Heirs</em> Jadi akan lenih baik jika dipasangkan dengan Char Chrisos heirs karena memang bisa menjadi lebih cepat dalam pengumpulan recollection(stack Ultimatenya).</p>
+            <p>Selain itu Cyrene punya buff spesial jika dipasangkan dengan Char Chrysos Heirs.</p>
+            <details>
+                <summary>Rekomendasi Character Lain</summary>
+                <table class="ringkas">
+                    <tr>
+                        <th>Alternatif</th>
+                        <th>Penjelasan</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="../IconChar/tribbie.png" class="icon"><br>Tribbie</td>
+                        <td>Support Replacement</td>
+                    </tr>
+                    <tr>
+                        <td class="ringkasMid">Tribbie sampai saat ini masih menjadi harmoni terbaik untuk dipasangkan dengan tim manapun karena dapat memberikan RES PEN untuk tim, selain itu dia juga salah satu dari Char Chrysos heirs.</td>                       
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="../IconChar/Phainon.png" class="icon"><br>Phainon</td>
+                        <td>DPS Replacement</td>
+                    </tr>
+                    <tr>
+                        <td class="ringkasMid">Phainon adalah Char Chrysos Heirs dan DPS HyperCarry, juga dapat memanfaatkan semua buff yang diberikan Cyrene kepada tim.</td>                       
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="../IconChar/Chiper.png" class="icon"><br>Cipher</td>
+                        <td>Sub DPS Replacement</td>
+                    </tr>
+                    <tr>
+                        <td class="ringkasMid">Chiper juga salah satu dari Char Chrysos Heirs dan sub DPS yang dapat memberikan debuff kepada musuh.</td>                       
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="../IconChar/Hyiselins.png" class="icon"><br>Hyiselins</td>
+                        <td>DPS(DoT) Replacement</td>
+                    </tr>
+                    <tr>
+                        <td class="ringkasMid">Hyiselins juga salah satu dari Char Chrysos Heirs dan DPS(DoT) yang memberikan DoT acak pada musuh. Hyiselins juga dapat memanfaatkan buff dari Cyrene.</td>                       
+                    </tr>
+                    <tr>
+                        <td rowspan="2"><img src="../IconChar/Theherta.png" class="icon"><br>The Herta</td>
+                        <td>DPS Replacement</td>
+                    </tr>
+                    <tr>
+                        <td class="ringkasMid">Meskipun si cantik the Herta bukan Char Chrysos Heirs tetapi Cyrene juga dapat memberikan buff yang berupa <b>True DMG</b> selain itu akan sangat bagus jika dipasangkan dengan Anaxa karena Anaxa dapat buff spesialnya dari Cyrene.</td>                       
+                    </tr>
+                </table>
+            </details>
+        </section>
+        <section class="reveal" id="relics">
+            <h1>Cyrene Relics & Ornament</h1>
+            <h2>Rekomendasi Relik & Ornament</h2>
+            <table class="ringkas">
+                <tr>
+                    <th>Relics</th>
+                    <th>Rating & Fungsi</th>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="garis"><img src="../Relic/sacerdos.png" class="relic"><br>Sacerdos' Relived Ordeal <b>x2</b>
+                    <br><img src="../Relic/mesengger.png" class="relic"><br>Messenger Traversing Hackerspace  <b>x2</b></td>
+                    <td><b>Terbaik</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Kalian bisa pakein Cyrene 2Pc 2Pc relic yang nambahin SPD, Kenapa ini menjadi relic terbaik karena Cyrene butuh giliran yang cepat agar cepat juga mengumpulkan Recollection(Stack Ultimatenya) Yang 24 Stack.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../Relic/World remaking deliverer.png" class="relic"><br>World-Remaking Deliverer <b>x4</b></td>
+                    <td><b>Alternatif</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Pake Relic ini jika DPS kalian Remembrance, Karena jika dengan char Remembrance memosprite ketika beraksi juga dihitung sebagai Recollectionnya Cyrene.</td>
+                </tr>
+                <tr>
+                    <th>Ornament</th>
+                    <th>Merits</th>
+                </tr>
+                <tr>
+                <td rowspan="2"><img src="../Relic/Vonhwack.png" class="relic"><br>Sprightly Vonwacq</td>
+                <td><b>Terbaik</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Singkatnya Terbaik karena ornament ini dapat mendahulukan aksi 30% ketika masuk pertempuran yang dapat membantu Cyrene untuk mengumpulkan Recollectionnya dengan Cepat.</td>
+                </tr>
+                <tr>
+                <td rowspan="2"><img src="../Relic/Amphoreus, The eternal Land.png" class="relic"><br>Amphoreus, The Eternal Land</td>
+                <td><b>Opsi Lain</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Pake ini jika Tim kalian banyak path dari Remembrance</td>
+                </tr>
+            </table>
+        </section>
+        <section class="reveal" id="lightCone">
+            <h1>Light Cone terbaik Cyrene</h1>
+            <h2>Rekomendasi Light Cone</h2>
+            <table class="ringkas">
+                <tr>
+                    <th class="gariss">Light Cone</th>
+                    <th>Penjelasan</th>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../LightCone/LC CYRENE.png" class="LC"><br>This Love, Forever</td>
+                    <td>Terbaik</td>
+                </tr>
+                <tr>
+                    <td>Singkatnya LC signya bisa ningkatin SPD yang sangat tinggi sehingga Stat Cyrene gampang untuk kita kejar</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../LightCone/memory curtain never falls.png" class="LC"><br>Memory Curtain Never Falls</td>
+                    <td>Bagus</td>
+                </tr>
+                <tr>
+                    <td>Meskipun LC ini gratis tapi pasif nya sangat kita terima karena bisa ningkatin SPD 12% di R5 nya. <em>Tapi ya mungkin bakal rebutan sama Char remembrance lain</em></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../LightCone/Long My Rainbow.png" class="LC"><br>Long My Rainbow</td>
+                    <td>Bagus</td>
+                </tr>
+                <tr>
+                    <td>Jika kalian punya LC Signya Hyacine tentu bisa kalian pakein ke Cyrene yang dapat memberikan peningkatan SPD, selain itu LC ini juga dapat meningkatkan DMG yang diterima musuh setelah memosprite-nya menggunakan skillnya.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../LightCone/Victory in A Blink.png" class="LC"><br>Victory In a Blink</td>
+                    <td>Masih bisa dipake</td>
+                </tr>
+                <tr>
+                    <td>untuk B4 nya bisa kalian pake yang gratisan ini <em>Victory In a Blink</em> yang dapat meningkatkan CRIT DMG ke seluruh rekan tim setelah pengguna menggunakan skillnya.</td>
+                </tr>
+            </table>
+        </section>
+        <section class="reveal">
+            <h1>Eidolon Cyrene</h1>
+            <h2>Rekomendasi Eidolon untuk kalian kejar</h2>
+            <table class="ringkas">
+                <tr>
+                    <th class="garis"></th>
+                    <th>Rekomendasi</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">E1</th>
+                    <td>Bagus</td>
+                </tr>
+                <tr>
+                    <td>Dapat 6 recollection setalah menggunakan <em>Ode to Ego</em></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">E2</th>
+                    <td>Sangat Bagus sekali</td>
+                </tr>
+                <tr>
+                    <td>Mendapatkan 12 stack recollection ketika memasuki pertempuran<br>Sehingga SPD yang kita kejar gak terlalu tinggi dan cukup kerasa bedanya gameplay E0/E1 sama E2nya saking cepet ultimatenya aktif</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">E4</th>
+                    <td>Bagus</td>
+                </tr>
+                <tr>
+                    <td>Bounce DMG yang diakibatkan Cyrene membrikan lebih banyak DMG untuk setiap penggunaan <em>"Minuet of Blooms and Plumes".</em></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">E6</th>
+                    <td>Bagus</td>
+                </tr>
+                <tr>
+                    <td>Semua rekan tim mendapatlkan pendahuluan aksi 100% ketika cyrene melancarkan Ultimatenya sama halnya kayak ultimatenya <b>Robin</b> selain itu <em>"Ode to Ego" dan <em>"Minuet of Blooms and Plumes"</em> juga dapat mengurangi DEF musuh.</td>
+                </tr>
+            </table>
+            <h2>Semua Efek Eidolon Cyrene</h2>
+            <table class="eidolons reveal">
+                <tr>
+                    <th rowspan="2"><img src="../Eidolon/E1 Cyrene.png" class="eidolon"><br>E1</th>
+                    <td>Epics, Born on a Blank Slate</td>
+                </tr>
+                <tr>
+                    <td>Saat Demiurge memicu Skill Memosprite "Ode to ego" dan melancarkan "Minuet of Blooms and Plumes", Cyrene akan memperoleh 6 stack Recollection dan membuat jumlah Bounce dari serangan kali ini bertambah ekstra 12 kali.</td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><img src="../Eidolon/E2 Cyrene.png" class="eidolon"><br>E2</th>
+                    <td><b>A Tomorrow in Thirteen Shades</b></td>
+                </tr>
+                <tr>
+                    <td>Memperoleh 12 stack Recollection tambahan saat memasuki Pertempuran. Setiap 1 karakter tim berbeda yang memperoleh <em>efek buff</em> dari Skill Memosprite Demiurge akan meningkatkan 6% <em>True DMG</em> Multiplier yang diakibatkan rekan tim melalui area pembatas Skill, Maksimal meningkat 24%.</td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><img src="../Eidolon/E3 Cyrene.png" class="eidolon"><br>E3</th>
+                    <td><b>By Thy Being, As i've Witten</b></td>
+                </tr>
+                <tr>
+                    <td>Level Ultimate +2, maksimal Lv.15. Level Talent +2, maksimal Lv.15. Level Skill Memosprite +1, maksimal Lv.10.</td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><img src="../Eidolon/E4 Cyrene.png" class="eidolon"><br>E4</th>
+                    <td><b>Please Write On, With a Smile</b></td>
+                </tr>
+                <tr>
+                    <td>Setiap setelah Demiurge melancarkan 1 kali "minuet of Blooms and Plumes". Bounce DMG Multiplier dari Skill Memosprite "Ode to Ego" yang dipicu dalam pertempuran ini meningkat 6%, dapat ditumpuk hingga 24 lapis.</td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><img src="../Eidolon/E5 Cyrene.png" class="eidolon"><br>E5</th>
+                    <td><b>Gaze, Steeped in Yesterbloom</b></td>
+                </tr>
+                <tr>
+                    <td>Level Skill +2, maksimal Lv.15. Level Basic attack +1, maksimal Lv.10. Level Talent Memosprite +1, maksimal Lv.10.</td>
+                </tr>
+                <tr>
+                    <th rowspan="2"><img src="../Eidolon/E6 Cyrene.png" class="eidolon"><br>E6</th>
+                    <td><b>Remembrance, Sung in Ripples</b></td>
+                </tr>
+                <tr>
+                    <td>Saat Cyrene pertama kali melancarkan Ultimate, dia akan <em>mendahulukan aksi </em>seluruh rekan tim sebesar 100%. setiap kali Demiurge memicu Skill Memosprite "Ode to Ego" dan melancarkan "minuet of Blooms and Plumes" akan memperoleh efek berikut berdasarkan jumlah pemicuan dalam pertempuran ini: <br>1 kali: DEF seluruh target musuh berkuran 20% saat Demiurge berada di medan pertempuran; minimal 2 kali: <em>mendahulukan aksi</em> seluruh rekan tim sebesar 24%.</td>
+                </tr>
+            </table>
+        </section>
+        <section class="reveal" id="trace">
+            <h1>Trace Cyrene (Skill & KIT)</h1>
+            <h2>Abiliti aktif</h2>
+            <table class="ringkas reveal">
+                <tr>
+                    <th>Trace</th>
+                    <th>Penjelasan</th>
+                </tr>
+                <tr>
+                    <td>Basic ATK</td>
+                    <td class="ringkasMid"><b>Lo, Hope Takes Flight!</b>: Memperoleh <em>Recollection</em> dan mengakibatkan Ice DMG dalam jumlah kecil pada 1 musuh yang ditargetkan.<br><b>To love and Tomorrow</b>: Memperoleh <em>Recollection</em> dan mengakibatkan Ice DMG pada seluruh musuh.</td>
+                </tr>
+                <tr>
+                    <td>Talent</td>
+                    <td class="ringkasMid"><b>Hearts Gather as One</b>: Saat pertempuran dimulai atau setelah Cyrene beraksi, rekan Cyrene akan memperoleh <em>"Future".</em> Saat rekan tim yang memliki <em>"Future"</em> beraksi, akan memberikan <em>Recollection</em> pada Cyrene. Saat Cyrene berada di pertempuran, DMG yang diakibatkan seluruh rekan tim meningkat.</td>
+                </tr>
+                <tr>
+                    <td>Skill</td>
+                    <td class="ringkasMid"><b>Bloom, Elysium of Beyond</b>: Memperoleh <em>Recollection</em> dan menciptakan area pembatas. Seluruh rekan tim akan mengakibatkan Ekstra <em>True DMG</em> setelah mengakibatkan DMG.</td>
+                </tr>
+                <tr>
+                    <td>Ultimate</td>
+                    <td class="ringkasMid"><b>Verse Vow</b>: <em>Memanggil Memosprite</em> Demiurge dan membuatnya segera memperoleh 1 <em>giliran tambahan</em> serta mengaktifkan Ultimate seluruh rekan karakter ini. Kemudian memasuki status <b>Ripples of Past Reverie</b> dan memperoleh Enhanced Basic Attack. Crit RATE Cyrene dan Demiurge meningkat, sementara Cyrene menciptakan area pembatas dari Skill dan membuatnya tidak memiliki durasi. <br><b>Reunion at First Sight</b>: Membuat Demiurge segera memperoleh 1 <em>giliran tambahan.</em></td>
+                </tr>
+            </table>
+            <h2>Memosprite Abiliti</h2>
+            <table class="ringkas reveal">
+                <tr>
+                    <th>Trace</th>
+                    <th>Penjelasan</th>
+                </tr>
+                <tr>
+                    <td>Skill Memosprite</td>
+                    <td class="ringkasMid"><b>Minuet of Blooms and Plumes</b>: Mengakibatkan Ice DMG pada seluruh musuh. <br><b>This Ode, to All Lives</b>: Memberikan <b>Buff</b> pada 1 karakter tim. Jika karakter tersebut merupakan <em>Keturunan Chrysos Heirs</em> dia akan memperoleh <mark>Efek khusus.</mark> Jika bukan DMG yang diakibatkannya akan meningkat. Efek ini juga berlaku pada Memosprite milik karakter tersebut.</td>
+                </tr>
+                <td>Talent Memosprite</td>
+                <td class="ringkasMid"><b>Waiting, In Every Past</b>: Saat HP Cyrene berubah, HP Demiurge juga akan berubah dalam jumlah yang sesuai. Saat Demiurge berada di pertempuran, Max HP Cyrene meningkat. <br><b>Hello, World</b>: Saat dipanggil, akan menghapus <em>CC Debuff</em> dari seluruh rekan tim.</td>
+            </table>
+            <h2>Teknik & Kemampuan Tambahan</h2> 
+            <table class="ringkas reveal">
+                <tr>
+                    <th>Trace</th>
+                    <th>Penjelasan</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Tecnique</td>
+                    <td class="ringkasMid"><b>Peace at West Wind's End</b>: blablabla</td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><b>Stat Bonus</b>: <br>1. CDM +5.3% <br>2. SPD +2 <br>3. CDM +5.3%</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Kemampuan Tambahan</td>
+                    <td class="ringkasMid"><b>Causality in Trichotonomy</b>: Saat SPD Cyrene lebih dari atau sama dengan 180, DMG yang diakibatkan seluruh rekan tim meningkat 20%. Setelah itu setiap 1 SPD yang berlebih akan meningkatkan 2% Ice <em>RES PEN</em> dari Cyrene dan Demiurge, maksimal menghitung 60 SPD yang berlebih.</td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><b>Stat Bonus</b>: <br>1. Max HP +6.0% <br>2. SPD +4 <br>3. CDM +10.7%</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Kemampuan Tambahan</td>
+                    <td class="ringkasMid"><b>Child of Remembrance</b>: Memosprite milik rekan karakter ini akan memperoleh <em>"Future"</em> saat dipanggil, <em>"Future"</em> yang dimiliki Memosprite tidak akan terkonsumsi</td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><b>Stat Bonus</b>: <br>1. Max HP +6.0% <br>2. CDM +8.0%</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Kemampuan Tambahan</td>
+                    <td class="ringkasMid"><b>Ripples Across Time</b>: Saat dalam tim ada 1/2/3 karakter <mark>Chrysos Heirs </mark> atau karakter path <mark> Remembrance </mark> selain Cyrene, Cyrene akan memperoleh 2/3/6 poin <em>Recollection</em> saat pertempuran dimulai.</td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><b>Stat Bonus</b>: <br>1. SPD +3 <br>2. CDM +8.0%</td>
+                </tr>
+            </table>   
+        </section>
+        <section id="spbuff">
+            <h1>Spesial Buff Cyrene</h1>
+            <h2>Chrysos Heirs Spesial Buff</h2>
+            <table class="ringkas">
+                <tr>
+                    <th>Character</th>
+                    <th>Spesial Buff</th>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Cyrene-card.jpg" class="card"><br><b>Cyrene</b></td>
+                    <td><b>Ode To Ego</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Setiap kali Cyrene memperoleh <em>"Recollection"</em> dari 1 rekannya yang berbeda (elain Demiurge), Demiurge akan mengakibatkan ekstra 1 kali DMG pada 1 musuh acak saat melancarkan <em>"Minuet of Blooms and Plumes".</em> Setelah Cyrene melancarkan sejumlah Ultimate, Demiurge akan segera memperoleh 1 <em>giliran tambahan</em> dan otomatis melancarakan <em>"Minuet of Blooms and Plumes".</em></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/aglaea-card.jpg" class="card"><br><b>Aglaea</b></td>
+                    <td><b>Ode To Romance</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku satu kali.</mark> Saat dilancarkan pada Aglaea. Aglaea akan memperoleh <em>"Romantic"</em> dan efek peningkatan SPD dari Talent Memosprite Garmentmaker akan segera menumpuk hingga batas maksimum. Setelah Aglaea atau Garmentmaker menyerang, akan memulihkan Energy. DMG yang diakibatkan Aglae dan Garmentmaker meningkat  dan mengabaikan DEF target.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Anaxa-Card.jpg" class="card"><br><b>Anaxa</b></td>
+                    <td><b>Ode To Reason</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku satu kali.</mark> Saat dilancarkan pada Anaxa, akan memulihkan Poin Skill untuk rekan tim, serta membuat Anaxa segera beraksi dan jumlah DMG dari Skill bertambah. Selain itu, semua karakter Pth <em>"Erudition"</em> Mengalami peningkatan ATK dan Skill DMG yang diakibatkan.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Phainon-Card.jpg" class="card"><br><b>Phainon</b></td>
+                    <td><b>Ode To Worldbearing</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Setelah dilancarkan pada Phainon, Phainon akan segera memperoleh <em>"Coreflame"</em>, CRIT Rate dan CRIT DMG Khaslana meningkat, dan setelah <em>giliran tambahan Khaslana</em> habis dikonsumsi tidak akan mengakhiri transformasi, melainkan memperoleh <em>"Scourge"</em> serta me-refresh <em>giliran tambahan Khaslana.</em> Saat <em>giliran tambahan</em> dimulai, akan kehilangan HP saat ini. Setelah Melancarkan Serangan akan mengakibatkan Fire DMG Tambahan pada musuh acak.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Mydei-card.jpg" class="card"><br><b>Mydei</b></td>
+                    <td><b>Ode To Strife</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku satu kali.</mark> Saat dilancarkan pada Mydei akan menghapus <em>"CC Debuff".</em> Jika Mydei berstatus <em>"Vandetta",</em> maka dia akan otomatis melancarkan <em>"Godslayer Be God"</em> dan mengalami peningkatan CRIT DMG. Jika Mydei tidak berstatus <em>"Vandetta",</em> maka akan <em>mendahulukan aksi</em> Mydei.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Castorice-Card.jpg" class="card"><br><b>Castorice</b></td>
+                    <td><b>Ode To Life and Death</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Saat dilancarkan pada Castorice, <em>"Newbud"</em> dapat meluap hingga 200%. Saat memaanggil Netherwing, akan mengonsumsi seluruh <em>"Newbud"</em> yang berlebih dan berdasarkan nilai berlebih meningkatkan DMG Multiplier yang diakibatkan efek kemampuan Talent <em>"Wings Seep the Ruins"</em> yang dipicu Netherwing panggilan kali ini. Jika target musuh kurang dari atau sama dengan 2 maka DMG Multiplier akan meningkat Ekstra.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Cipher-Card.jpg" class="card"><br><b>Cipher</b></td>
+                    <td><b>Ode To Trickery</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Saat dilancarkan pada Cipher, akan meningkatkan 36% DMG yang diakibatkan Cipher. Serta mengurangi 20% DEF <em>"Patron"</em> dan 12% DEF target musuh selain <em>"Patron".</em></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Tribbie-card.jpg" class="card"><br><b>Tribbie</b></td>
+                    <td><b>Ode To passage</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Saat dilancarkan pada Tribbie, DMG yang diakibatkan Tribbie akan mengabaikan DEF target musuh. Saat Tribbie melancarkan serangan lanjutan yang memicu <em>DMG tambahan</em> dari area pembatas milik Tribbie, akan mengakibatkan ekstra 1 kali DMG Tambahan.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Cerydra-Card.jpg" class="card"><br><b>Cerydra</b></td>
+                    <td><b>Ode To Law</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Saat dilancarkan pada Cerydra, CDM karakter yang memiliki <em>"Military Merit"</em> meningkat. Setelah <em>Serangan Kejutan</em> berakhir. Cerydra akan memperoleh 1 Charge.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/hyacine-card.jpg" class="card"><br><b>Hyacine</b></td>
+                    <td><b>Ode To Sky</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Saat Demiurge melancarkan Skill Memosprite, Hyacine akan memperoleh 2 lapis <em>"Ode to Sky"</em>. saat dilancarkan pada Hyacine, akan memulihkan Energy Hyacine. Saat Hyacine memiliki <em>"Ode to Sky"</em> dan memberikan pemulihan, akumulasi Outgoing Healing yang dihitung Skill Memosprite Little Ica akan meningkat ekstra.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/DanHengPt-Card.jpg" class="card"><br><b>Permansor Terrae</b></td>
+                    <td><b>Ode To Earth</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid">Saat Demiurge melancarkan Skill Memosprite, <em>"Souldragon"</em> akan mengakibatkan <em>DMG Tambahan</em> setelah menyerang, Dan Heng PT akan memeproleh <em>"Ode to Earth":</em> DMG yang diakibatkan <em>"Bondmate</em> meningkat. Saat dilancarkan pada Dan Heng PT akan mendahulukan aksi <em>"Souldragon",</em> membuat Souldragon memeperoleh efek penguatan dari Ultimate Dan Heng PT di aksi berikutnya, dan Multiplier dari Shield yang diberikan meningkat.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Hyiselins-Card.jpg" class="card"><br><b>Hyiselins</b></td>
+                    <td><b>Ode To Ocean</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku satu kali.</mark> Saat dilancarkan pada Hyiselins, Hyiselins akan memeperoleh <em>"Flowing Warmth".</em> setelah Hyiselins melancarkan serangan, dia akan mengonsumsi <em>"Flowing Warmth"</em> untuk memulihkan Energy dirinya. DMG yang diakibatkan Hyiselins meningkat, dan setelah Hyiselins melancarkan Basic Attack/Skill untuk menyerang musuh, akan membuat semua <b>DoT</b> yang saat ini dimiliki target musuh yang terkena serangan segera mengakibatkan satu kali DMG.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/Evernight-Card.jpg" class="card"><br><b>Evernight</b></td>
+                    <td><b>Ode To Time</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Setelah dilancarkan pada Evernight, DMG yang diakibatkan saat <em>"Evey"</em> melancarkan Skill Memosprite <em>"Dream, Dissolving, as Dew"</em> akan meningkat, dan Evernight akan memeperoleh <em>"Memoria"</em> tambahan setelah melancarkan Skill/Ultimate. Efek peningkatan CDM dari Skill meningkat ekstra.</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../spesial-buff/MC-Card.jpg" alt="MC" class="card"><br><b>MC</b></td>
+                    <td><b>Ode To Genesis</b></td>
+                </tr>
+                <tr>
+                    <td class="ringkasMid"><mark>Berlaku sepanjang pertempuran.</mark> Setelah dilancarkan pada MC(Remembrance), akan meningkatkan ATK dan CRIT Rate MC(Remembrance). Efek ini juga berlaku untuk Mem. Setelah MC(Remembrance) melancarakan Enhanced Basic Attack, Demiurge akan segera memeproleh 1 giliran tambahan dan otomatis melancarkan <em>"Minuet of Blooms and Plumes".</em></td>
+                </tr>  
+            </table>
+            <br><p>Cyrene punya spesial buff yang dibuat untuk Char Chrysos Heirs. <em>Ini yang menjadi Cyrene Top Support untuk Char Chrysos Heirs.</em> Perlu diperhatikan juga bahwa setiap buff dari spesial buff ini ada yang sekali pakai kayak <b>Anaxa</b> ada juga yang permanen seperti <b>Castorice</b>.</p>
+        </section>
+        <section class="reveal">
+            <h1>Prioritas Trace Cyrene</h1>
+            <table>
+                <tr>
+                    <th>Trace</th>
+                    <th>Prioritas</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Basic Attack</td>
+                    <td><b>Rendah</b></td>
+                </tr>
+                <tr>
+                    <td>Untuk Basic Attack kalian bisa abikan saja</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Skill</td>
+                    <td><b>Sangat Tinggi</b></td>
+                </tr>
+                <tr>
+                    <td>Tingkatkan Skill Cyrene terlebih dahulu karena dapat meningkatkan True DMG Multiplier</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Ultimate</td>
+                    <td><b>Menengah</b></td>
+                </tr>
+                <tr>
+                    <td>Tingkatkan setelah kalian meningkatkan Talent-nya. Ultimatenya dapat meningkatkan CRIT Rate</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Talent</td>
+                    <td><b>Tinggi</b></td>
+                </tr>
+                <tr>
+                    <td>Meningkatkan Talent Cyrene dapat meningkatkan DMG seluruh rekan tim, jadi tingkatkan ini terlebih dahulu setelah Skillnya</td>
+                </tr>
+            </table>
+            <h1>Trace Memosprite</h1>
+            <table class="reveal">
+                <tr>
+                    <th>Trace</th>
+                    <th>Prioritas</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Skill Memosprite</td>
+                    <td><b>Sangat Tinggi</b></td>
+                </tr>
+                <tr>
+                    <td>Meningkatkan Spesial Buff yang diberikan Cyrene kepada Char Chrysos Heirs. Jadi Tingkatkan ini terlebih dahulu</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Talent Memosprite</td>
+                    <td><b>Rendah</b></td>
+                </tr>
+                <tr>
+                    <td>Tingkatkan ini terakhir karena hanya akan meningkatkan Max HP Cyrene dan memosprite-nya</td>
+                </tr>
+            </table>
+            <h1>Bonus Traces</h1>
+            <table class="reveal">
+                <tr>
+                    <th>Trace</th>
+                    <th>Prioritas</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Causality in Trichotonomy</td>
+                    <td><b>Prioritas Sangat Tinggi</b></td>
+                </tr>
+                <tr>
+                    <td>Aktifkan ini terlebih dahulu karena bisa meningkatkan DMG yang diakibatkan tapi dengan syarat jika SPD Cyrene kalian lebih atau sama dengan 180. dan untuk 1 SPD yang berlebih bisa meningkatkan RES-PEN Ice Cyrene dan memosprite-nya</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Child Of Remembrance</td>
+                    <td><b>Prioritas Tinggi</b></td>
+                </tr>
+                <tr>
+                    <td>Untuk ini Memosprite milik rekan karakter akan memperoleh <em>"Future"</em> saat dipanggil dan tidak akan mengonsumsi <em>"Future"</em> Yang dimiliki Memosprite, yang berarti <em>"Recollection"</em> bisa kita dapatkan dengan cepat untuk Cyrene</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Ripples Across Time</td>
+                    <td><b>Prioritas Tinggi</b></td>
+                </tr>
+                <tr>
+                    <td>Memberikan <em>"Recollection"</em> Kepada Cyrene yang bergantung pada jumlah Char Chrysos Heirs atau Remembrance, hal ini sangat bagus untuk Ultimate pertamanya</td>
+                </tr>
+            </table>
+        </section>
+        <section class="reveal" id="gpGuide">
+            <h1>Cyrene Gameplay Guide</h1>
+            <h2>Skill Cyrene yang membuat zona untuk memberikan True DMG</h2>
+            <img src="../Guide/SkillCyrene.png" class="guide" alt="skillCyrene">
+            <p>Skill Cyrene dapat memunculkan Zona yang dimana dapat memberikan buff <em>True DMG</em> kepada rekan tim. Juga memberikan rekan tim <em>Future</em></p>
+            <br><h2>Peroleh Recollection ketika tim beraksi yang mempunyai status <b>Future</b></h2>
+            <img src="../Guide/Recollection.png" class="guide" alt="skillCyrene">
+            <p>Ketika rekan tim beraksi Cyrene memperoleh Stack <em>"Recollection".</em> Ketika <em>"Recollection"</em> mencapai 24 Cyrene dapat mengaktifkan Ultimate pertamanya.</p>
+            <p>Setelah Penggunaan ultimate Cyrene untuk pertama kalinya, kita bisa menggunakannya lagi ketika <em>"Recollection"</em> memliki 12 stack.</p>
+            <br><h2>Buff Ultimate Cyrene</h2>
+            <img src="../Guide/UltiCyrene.png" class="guide" alt="skillCyrene">
+            <p>Ketika Cyrene menggunakan Ultimate-nya, rekan tim langsung mendapatkan Ultimate dengan energy penuh. Cyrene Juga mendapatkan Enhanced Basic Attack dan Zona dari Skill-nya akan aktif sepanjang pertempuran.</p>
+            <br><h2>2 jenis Buff Cyrene</h2>
+            <img src="../Guide/jenisBuffCyrene.png" class="guide" alt="skillCyrene">
+            <p>Ketika Cyrene menggunakan Ultimatenya <em>"Demiurge"</em> akan segera beraksi dan kita dapat memilih buff kepada rekan tim manapun. Jika rekan tim bukan char <em>"Chrysos Heirs"</em> makan akan mendapatkan buff True DMG.<br> Jika yang ditargetkan Char <em>"Chrysos Heirs"</em> maka akan mendapatkan spesial Buff.</p>
+            <br><h2>Memosprite Cyrene (Demiurge)</h2>
+            <img src="../Guide/demiurge.png" class="guide" alt="skillCyrene">
+            <p>Demiurge juga dapat digunakan untuk menyerang musuh. Jika rekan tim yang berbeda membantu mengumpulkan <em>"Recollection",</em> serangan tersebut akan memberikan DMG tambahan pada satu musuh. <br>Hal ini paling bagus digunakan ketika semua rekan tim sudah mendapatkan buff dari Cyrene.</p>
+            <br><h2>Technique meningkatkan SPD Party</h2>
+            <img src="../Guide/teknikCyrene.png" class="guide" alt="skillCyrene">
+            <p>Teknik Cyrene dapat memberikan peningkatan SPD kepada semua rekan tim dan dapat menciptakan Zona di awal pertempuran.</p>
+        </section>
+        <section class="reveal">
+            <h1>Informasi Cyrene</h1>
+            <table>
+                <tr>
+                    <th>Pengisi Suara</th>
+                    <th>Faction</th>
+                </tr>
+                <tr>
+                    <td><b>EN</b>: Aiden Dawn <br><b>JP</b>: Inoue Marina</td>
+                    <td>Chrysos Heirs</td>
+                </tr>
+            </table>
+        </section>
+        </article>
+    </main>
+    <footer>
+        <div class="logos" id="foter">ViTa</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="../../PORTFOLIO/PortolioFahmi.html">About</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+        <div class="sosmed">
+            <a href="https://www.instagram.com/dlicrates/" target="_blank" class="iconsosmed IG"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank" class="iconsosmed FB"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="iconsosmed GT"><i class="fa-brands fa-github"></i></a>
+        </div>
+                 <p>&copy; 2026 <strong>Fahmi Imansyah</strong>. Builth with Passion & presision</p>
+    </footer>
+<script src="buildCyrene.js"></script>
+</body>
+</html>

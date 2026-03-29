@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif ;
+    font-size: medium;
+}
+body{
+    background: #011c40;
+    color: white;
+}
+.logo{
+    font-size: 1.5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    background-color: rgba(135, 206, 250, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 9999;
+}
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: white; /* Sesuaikan sama warna tema lu */
+    border-radius: 5px;
+    transition: 0.3s;
+}
+aside{
+    position: sticky;
+    border-right: 1px solid white;
+    background-color: #003b4c;
+    height: fit-content;
+    width: 250px;
+    top: 60px;
+    height: 100vh;
+}
+aside ul{
+    list-style: none;
+    padding: 20px;
+}
+aside ul li{
+    padding: 15px;
+    border: 1px solid white;
+    background-color: #011c40;
+    border-radius: 4px;
+    margin: 5px;
+    transition: .4s ease;
+}
+aside ul li:hover{
+    background-color: deeppink;
+}
+aside ul li a{
+    color: white;
+    text-decoration: none;  
+}
+
+@media (max-width: 768px){
+    .hamburger{
+        display: flex;
+        padding: 10px;
+    }
+    aside{
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        height: 100vh;
+        width: 200px;
+        z-index: 999;
+        transition: .5s ease;
+    }
+    aside ul {
+        list-style: none;
+        padding: 20px;
+    }
+    aside ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 0;
+    }
+    aside.slide{
+    left: 0;
+    }
+    aside.lengit{
+        left: -100%;
+    }
+    .gantiTab{
+        margin: 10px auto;
+    }
+}
+html{
+    scroll-behavior: smooth;
+}
+.login{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.login li{
+    list-style: none;
+}
+
+.login li a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .4s ease;
+}
+.login li a:hover{
+    color: deeppink;
+    background-color: #011c40;
+    text-decoration: underline;
+}
+.Cyrenei{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    width: 95%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    animation: fadein .9s ease;
+}
+.icon{
+    width: 80%;
+    max-width: 100px;
+}
+.cyrenerow td{
+    text-align: start;
+    font-size: small;
+}
+.cyrenerow .Cyrene{
+    text-align: center;
+}
+.cyrenerow .Cyrene a{
+    color: deeppink;
+}
+.icons{
+    width: 100%;
+    max-width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+table{
+    width: 95%;
+    max-width: 500px;
+    border-collapse: collapse;
+    margin: 10px;
+    
+}
+th{
+    background-color: #003b4c;
+}
+table, th,td{
+    border: 1px solid white;
+}
+th{
+    padding: 12px 15px;
+    text-align: center;
+}
+td{
+    padding: 12px 15px;
+    font-size:medium;
+    text-align: center;
+}
+.konten{
+    display: none;
+    text-align: center;
+}
+.konten.active{
+    display: table;
+    text-align: center;
+}
+.gantiTab{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 75%;
+    
+}
+.stat{
+    display: flex;
+    gap: 10px;
+}
+.bar-bg{
+    flex-grow: 1;
+    background-color: #334155;
+    border-radius: 4px;
+}
+.bar-fill{
+    height: 100%;
+    background-color: deeppink;
+    border-radius: 4px;
+    transition: .4s ease;
+}
+button{
+    padding: 10px;
+    max-width: 200px;
+    width: 100%;    
+}
+button.active{
+    background-color: deeppink;
+    border: none;
+}
+/* 1. Kondisi awal: elemen gak kelihatan & agak di bawah */
+.reveal {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 1.4s ease-out; /* Durasi animasi pas ketrigger */
+}
+
+/* 2. Kondisi pas class "active" ditempel sama JS */
+.reveal.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+main{
+    margin: 80px 10px 250px;
+    display: flex;
+    gap: 10px;
+    
+}
+article{
+    flex: 1;
+}
+.LC{
+    width: 100%;
+    max-width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.relic{
+    width:35%;
+    max-width: 100px;
+    display:inline-block;
+    vertical-align: middle;    
+    height: 100%;
+    object-fit: contain;
+    margin:15px 0;
+}
+
+.timChrysos{
+    table-layout: fixed;
+}
+#build{
+    animation: fadein .8s ease-out;
+}
+#Alternatif{
+    animation: fadein .8s ease-out;
+}
+#Alternatif td{
+    text-align: start;
+}
+.conten{
+    display: none;
+}
+.conten.active{
+    display: table;
+}
+
+h1{
+    border-bottom: 2px solid deeppink;
+    width: 95%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+h2{
+    border-left: 2px solid deeppink;
+    padding-left: 10px;
+}
+summary{
+    border: 1px solid black;
+    padding: 12px 15px;
+    text-align: center;
+    background-color: #003b4c;
+    margin-top: 20px;
+    transition: .3s ease;
+}
+summary:hover{
+    color: #003b4c;
+    background-color: deeppink;
+}
+.ringkas .ringkasMid {
+    text-align: start;
+}
+.ringkas .garis{
+    width: 25%;
+}
+.ringkas .gariss{
+    width: 40%;
+}
+.eidolon{
+    width: 100%;
+}
+.eidolons th{
+    width: 40%;
+    background-color: #1a1836;
+}
+.card{
+    width: 90%;
+}
+.guide{
+    max-width: 500px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    max-width: 500px;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+footer{
+    background-color: #003b4c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 10px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+footer ul li{
+    background-color: #011c40;
+    padding: 10px;
+    border-radius: 4px;
+    transition: .4s ease;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    transition: .4s ease;    
+}
+footer ul li:hover{
+    background-color: black;
+}
+footer ul li a:hover{
+    color: deeppink;
+}
+.logos{
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+.sosmed{
+    display: flex;
+    gap: 30px;
+}
+.sosmed a{
+    color:white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.iconsosmed{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    transition: .4s ease;
+}
+.iconsosmed i{
+    font-size: 20px;
+    transition: .4s ease;
+}
+.iconsosmed.IG:hover{
+    background-color: #E4405F;
+}
+.iconsosmed.FB:hover{
+    background-color: #1877F2;
+}
+.iconsosmed.GT:hover{
+    background-color: black;
+}
+.iconsosmed.IG i:hover{
+    color: #1a1836;
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
